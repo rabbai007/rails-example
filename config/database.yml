@@ -15,7 +15,7 @@ postgresql: &postgresql
   database: root
   username: userQ42
   password: JJwRRsGQ
-  host:     172.30.5.20
+  #host:     172.30.5.20
   port:     5432
   min_messages: ERROR
   reconnect: false
