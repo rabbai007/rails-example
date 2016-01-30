@@ -12,11 +12,11 @@ mysql: &mysql
 
 postgresql: &postgresql
   adapter: postgresql
-  database: <%=ENV['OPENSHIFT_APP_NAME']%>
-  username: <%=ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME']%>
-  password: <%=ENV['OPENSHIFT_POSTGRESQL_DB_PASSWORD']%>
-  host:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_HOST']%>
-  port:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_PORT']%>
+  database: <%=ENV['POSTGRESQL_DATABASE']%>
+  username: <%=ENV['POSTGRESQL_USER']%>
+  password: <%=ENV['POSTGRESQL_PASSWORD']%>
+  #host:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_HOST']%>
+  port:     5432
   min_messages: ERROR
   reconnect: false
 
