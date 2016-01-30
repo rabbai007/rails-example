@@ -12,10 +12,10 @@ mysql: &mysql
 
 postgresql: &postgresql
   adapter: postgresql
-  database: <%=ENV['POSTGRESQL_DATABASE']%>
-  username: <%=ENV['POSTGRESQL_USER']%>
-  password: <%=ENV['POSTGRESQL_PASSWORD']%>
-  #host:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_HOST']%>
+  database: root
+  username: userQ42
+  password: JJwRRsGQ
+  host:     10.1.1.3
   port:     5432
   min_messages: ERROR
   reconnect: false
